@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #faf6ef;
+    color: #2d2a26;
+    line-height: 1.5;
+}
+
+header {
+    background: #3a2618;
+    color: #f5e6c8;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.zona-derecha {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contador-fav {
+    background: #c9a149;
+    color: #3a2618;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#zona-usuario {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+#zona-usuario .saludo {
+    color: #f5e6c8;
+    font-weight: bold;
+}
+
+.btn-logout {
+    background: #c9a149;
+    color: #3a2618;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background: #b89039;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(58, 38, 24, 0.08);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #3a2618;
+    border-bottom: 2px solid #c9a149;
+    padding-bottom: 0.4rem;
+    display: inline-block;
+}
+
+#form-login {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+#form-login input {
+    padding: 0.7rem;
+    border: 1px solid #d4c5a0;
+    border-radius: 4px;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 200px;
+    font-family: inherit;
+}
+
+#form-login button {
+    background: #3a2618;
+    color: #f5e6c8;
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+#form-login button:hover {
+    background: #5a3a25;
+}
+
+.error {
+    color: #b8302a;
+    font-size: 0.9rem;
+    min-height: 1.2rem;
+    width: 100%;
+    margin-top: 0.4rem;
+    font-weight: bold;
+}
+
+.filtros {
+    margin-bottom: 1.2rem;
+}
+
+.filtros select {
+    padding: 0.6rem;
+    border: 1px solid #d4c5a0;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    background: #fff;
+    font-family: inherit;
+    min-width: 220px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.libro {
+    border: 1px solid #e8d9b8;
+    border-radius: 6px;
+    padding: 1rem;
+    background: #fdfaf3;
+    display: flex;
+    flex-direction: column;
+}
+
+.libro h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    color: #3a2618;
+}
+
+.libro .badge {
+    background: #c9a149;
+    color: #3a2618;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: Arial, sans-serif;
+}
+
+.libro .autor {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.libro .precio {
+    font-weight: bold;
+    color: #b8302a;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    flex: 1;
+}
+
+.libro button {
+    background: #3a2618;
+    color: #f5e6c8;
+    border: none;
+    padding: 0.55rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.libro button:hover {
+    background: #5a3a25;
+}
+
+.vacio {
+    color: #888;
+    font-style: italic;
+    padding: 1rem 0;
+    grid-column: 1 / -1;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #3a2618;
+    color: #d4c5a0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

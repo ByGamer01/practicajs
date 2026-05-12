@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llibreria Mediterrània</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">📚 Llibreria Mediterrània</div>
+        <div class="zona-derecha">
+            <span class="contador-fav">★ <span id="contador-favoritos">0</span></span>
+            <div id="zona-usuario"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- LOGIN -->
+        <section id="seccion-login">
+            <h2>Iniciar sesión</h2>
+            <form id="form-login">
+                <input type="text" id="usuario" placeholder="Tu nombre">
+                <button type="submit">Entrar</button>
+                <p id="error-login" class="error"></p>
+            </form>
+        </section>
+
+        <!-- LIBROS -->
+        <section id="seccion-libros">
+            <h2>Catálogo</h2>
+            <div class="filtros">
+                <select id="filtro-genero">
+                    <option value="">Todos los géneros</option>
+                    <option value="Novela">Novela</option>
+                    <option value="Fantasía">Fantasía</option>
+                    <option value="Histórico">Histórico</option>
+                    <option value="Infantil">Infantil</option>
+                </select>
+            </div>
+            <div id="listado-libros" class="grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Llibreria Mediterrània — Examen práctico</p>
+    </footer>
+
+    <script src="examen.js"></script>
+</body>
+</html>
